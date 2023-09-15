@@ -1,5 +1,5 @@
 import PostCard from "@/components/PostCard";
-import React from "react";
+import "./Posts.css";
 
 async function loadPosts() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -16,8 +16,7 @@ export default async function Posts() {
   console.log(posts);
 
   return (
-    <div>
-      PostPages
+    <div className="grid">
       {posts.map((post) => (
         <PostCard key={post.id} {...post} />
       ))}
