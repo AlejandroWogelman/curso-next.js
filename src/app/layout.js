@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Curso fazt - home",
